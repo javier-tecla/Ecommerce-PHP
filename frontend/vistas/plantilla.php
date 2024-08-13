@@ -10,6 +10,14 @@
 
     <title>Tienda Virtual</title>
 
+    <?php
+
+        $icono = ControladorPlantilla::ctrEstiloPlantilla();
+
+        echo '<link rel="icon" href="http://localhost/ecommerce-php/backend/'.$icono["icono"].'">';
+
+    ?>
+
     <link rel="stylesheet" href="vistas/css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="vistas/css/plugins/font-awesome.min.css">
 
@@ -44,6 +52,7 @@ include "modulos/cabezote.php"
 ?>
 
 <script src="vistas/js/cabezote.js"></script>
+<script src="vistas/js/plantilla.js"></script>
 
 </body>
 </html>
