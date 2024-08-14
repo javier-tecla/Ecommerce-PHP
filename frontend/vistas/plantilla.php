@@ -16,10 +16,16 @@
 
         echo '<link rel="icon" href="http://localhost/ecommerce-php/backend/'.$icono["icono"].'">';
 
+        /*=====================================
+        MANTENER LA RUTA FIJA DEL PROYECTO
+        ======================================*/
+
+        $url = Ruta::ctrRuta();
+
     ?>
 
-    <link rel="stylesheet" href="vistas/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="vistas/css/plugins/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/font-awesome.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,12 +35,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="vistas/css/plantilla.css">
-    <link rel="stylesheet" href="vistas/css/cabezote.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plantilla.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>vistas/css/cabezote.css">
 
 
-    <script src="vistas/js/plugins/jquery.min.js"></script>
-    <script src="vistas/js/plugins/bootstrap.min.js"></script>
+    <script src="<?php echo $url; ?>vistas/js/plugins/jquery.min.js"></script>
+    <script src="<?php echo $url; ?>vistas/js/plugins/bootstrap.min.js"></script>
     
 
 
@@ -47,12 +53,20 @@
 CABEZOTE
 ======================================*/
 
-include "modulos/cabezote.php"
+include "modulos/cabezote.php";
+
+$rutas = array();
+
+if(isset($_GET["ruta"])) {
+
+    $rutas = explode("/", $_GET["ruta"]);
+
+}
 
 ?>
 
-<script src="vistas/js/cabezote.js"></script>
-<script src="vistas/js/plantilla.js"></script>
+<script src="<?php echo $url; ?>vistas/js/cabezote.js"></script>
+<script src="<?php echo $url; ?>vistas/js/plantilla.js"></script>
 
 </body>
 </html>

@@ -168,7 +168,7 @@ HEADER
 				echo '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 				
 						<h4>
-							<a href="#" class="pixelCategorias">'.$value["categoria"].'</a>
+							<a href="'.$value["ruta"].'" class="pixelCategorias">'.$value["categoria"].'</a>
 						</h4>
 				
 						<hr>
@@ -179,7 +179,7 @@ HEADER
 
 						foreach ($subcategorias as $key => $value) {
 							
-							echo '<li><a href="#" class="pixelSubCategorias">'.$value["subcategoria"].'</a></li>';
+							echo '<li><a href="'.$value["ruta"].'" class="pixelSubCategorias">'.$value["subcategoria"].'</a></li>';
 						}
 					
 						echo '</ul>
