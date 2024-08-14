@@ -2,42 +2,69 @@
 
 require_once "conexion.php";
 
-class ModeloProductos {
-    
-    /*=====================================
+class ModeloProductos{
+
+	/*=============================================
 	MOSTRAR CATEGORÍAS
-	======================================*/
+	=============================================*/
 
-    static public function mdlMostrarCategorias($tabla){
+	static public function mdlMostrarCategorias($tabla, $item, $valor){
 
-        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
+		if($item != null){
 
-        $stmt -> execute();
+			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
 
-        return $stmt->fetchAll();
+			$stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
 
-        $stmt -> closeCursor();
+			$stmt -> execute();
 
-        $stmt = null;
-    }
+			return $stmt -> fetch();
 
-    /*=====================================
+		}else{
+
+			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
+
+			$stmt -> execute();
+
+			return $stmt -> fetchAll();
+
+		}
+		
+		$stmt -> close();
+
+		$stmt = null;
+
+	}
+
+	/*=============================================
 	MOSTRAR SUB-CATEGORÍAS
-	======================================*/
+	=============================================*/
 
-    static public function mdlMostrarSubCategorias($tabla, $id){
+	 public static function mdlMostrarSubCategorias($tabla, $item, $valor){
 
-        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE id_categoria = :id_categoria");
+		if($item != null){
 
-        $stmt -> bindParam(":id_categoria", $id, PDO::PARAM_INT);
+			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
 
-        $stmt -> execute();
+			$stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
 
-        return $stmt->fetchAll();
+			$stmt -> execute();
 
-        $stmt -> closeCursor();
+			return $stmt -> fetchAll();
 
-        $stmt = null;
-    }
+		}else{
 
+			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
+
+			$stmt -> execute();
+
+			return $stmt -> fetchAll();
+
+		}
+
+		$stmt -> close();
+
+		$stmt = null;
+
+	}
 }

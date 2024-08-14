@@ -6,24 +6,24 @@ class ControladorProductos {
 	MOSTRAR CATEGORÍAS
 	======================================*/
 
-    public static function ctrMostrarCategorias() {
+    public static function ctrMostrarCategorias($item, $valor) {
 
         $tabla = "categorias";
 
-        $respuesta = ModeloProductos::mdlMostrarCategorias($tabla);
+        $respuesta = ModeloProductos::mdlMostrarCategorias($tabla, $item, $valor);
         
         return $respuesta;
     }
 
     /*=====================================
-	MOSTRAR SUB-CATEGORÍAS
+	MOSTRAR SUBCATEGORÍAS
 	======================================*/
 
-    public static function ctrMostrarSubCategorias($id) {
+    public static function ctrMostrarSubCategorias($item, $valor) {
 
         $tabla = "subcategorias";
 
-        $respuesta = ModeloProductos::mdlMostrarSubCategorias($tabla, $id);
+        $respuesta = ModeloProductos::mdlMostrarSubCategorias($tabla, $item, $valor);
         
         return $respuesta;
     }
