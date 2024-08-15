@@ -37,6 +37,7 @@
 
     <link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plantilla.css">
     <link rel="stylesheet" href="<?php echo $url; ?>vistas/css/cabezote.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>vistas/css/slide.css">
 
 
     <script src="<?php echo $url; ?>vistas/js/plugins/jquery.min.js"></script>
@@ -110,9 +111,11 @@ if(isset($_GET["ruta"])) {
 
         include "modulos/error404.php";
 
-
     }
 
+} else {
+
+    include "modulos/slide.php";
 }
 
 ?>
