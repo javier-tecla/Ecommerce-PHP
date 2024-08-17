@@ -12,9 +12,11 @@
 
     <?php
 
+        $servidor = Ruta::ctrRutaServidor();
+
         $icono = ControladorPlantilla::ctrEstiloPlantilla();
 
-        echo '<link rel="icon" href="http://localhost/ecommerce-php/backend/'.$icono["icono"].'">';
+        echo '<link rel="icon" href="'.$servidor.$icono["icono"].'">';
 
         /*=====================================
         MANTENER LA RUTA FIJA DEL PROYECTO
