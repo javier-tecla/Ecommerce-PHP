@@ -56,6 +56,8 @@ function avanzar() {
     item++;
   }
 
+  interrumpirCiclo = true;
+
   movimientoSlide(item);
 }
 $("#slide #avanzar").click(function () {

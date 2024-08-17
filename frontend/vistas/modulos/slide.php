@@ -30,11 +30,15 @@ SLIDESHOW
 
                 <img src="http://localhost/ecommerce-php/backend/'.$value["imgFondo"].'">
 
-                <div class="slideOpciones '.$value["tipoSlide"].'">
+                <div class="slideOpciones '.$value["tipoSlide"].'">';
 
-                    <img class="imgProducto" src="http://localhost/ecommerce-php/backend/'.$value["imgProducto"].'" style="top:'.$estiloImgProducto["top"].'; right:'.$estiloImgProducto["right"].'; width:'.$estiloImgProducto["width"].'; left:'.$estiloImgProducto["left"].'">
+                    if($value["imgProducto"] != "") {
 
-                    <div class="textosSlide" style="top:'.$estiloTextoSlide["top"].'; left:'.$estiloTextoSlide["left"].'; width:'.$estiloTextoSlide["width"].'; right:'.$estiloTextoSlide["right"].'">
+                  echo '<img class="imgProducto" src="http://localhost/ecommerce-php/backend/'.$value["imgProducto"].'" style="top:'.$estiloImgProducto["top"].'; right:'.$estiloImgProducto["right"].'; width:'.$estiloImgProducto["width"].'; left:'.$estiloImgProducto["left"].'">';
+
+                }
+
+                   echo '<div class="textosSlide" style="top:'.$estiloTextoSlide["top"].'; left:'.$estiloTextoSlide["left"].'; width:'.$estiloTextoSlide["width"].'; right:'.$estiloTextoSlide["right"].'">
 
                         <h1 style="color:'.$titulo1["color"].'">'.$titulo1["texto"].'</h1>
 
