@@ -83,6 +83,9 @@ MOVIMIENTO SLIDE
 ======================================*/
 
 function movimientoSlide(item) {
+
+  $("#slide ul li").finish();
+
   $("#slide ul").animate({ left: item * -100 + "%" }, 1000, "easeOutQuart");
 
   $("#paginacion li").css({ opacity: 0.5 });
@@ -114,6 +117,8 @@ INTERVALO
 setInterval(function () {
   if (interrumpirCiclo) {
     interrumpirCiclo = false;
+    detenerIntervalo = false;
+    $("#slide ul li").finish();
   } else {
     if (!detenerIntervalo) {
       avanzar();
