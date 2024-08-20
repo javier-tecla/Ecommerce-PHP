@@ -26,6 +26,10 @@
 
     ?>
 
+     <!--=====================================
+    PLUGINS DE CSS
+    ======================================-->
+
     <link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/font-awesome.min.css">
 
@@ -37,10 +41,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
 
+    <!--=====================================
+    HOJAS DE ESTILO PERSONALIZADAS
+    ======================================-->
+
     <link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plantilla.css">
     <link rel="stylesheet" href="<?php echo $url; ?>vistas/css/cabezote.css">
     <link rel="stylesheet" href="<?php echo $url; ?>vistas/css/slide.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>vistas/css/productos.css">
 
+     <!--=====================================
+    PLUGINS DE JAVASCRIPT
+    ======================================-->
 
     <script src="<?php echo $url; ?>vistas/js/plugins/jquery.min.js"></script>
     <script src="<?php echo $url; ?>vistas/js/plugins/bootstrap.min.js"></script>
@@ -120,9 +132,15 @@ if(isset($_GET["ruta"])) {
 } else {
 
     include "modulos/slide.php";
+
+    include "modulos/destacados.php";
 }
 
 ?>
+
+ <!--=====================================
+ JAVASCRIPT PERSONALIZADO
+======================================-->
 
 <script src="<?php echo $url; ?>vistas/js/cabezote.js"></script>
 <script src="<?php echo $url; ?>vistas/js/plantilla.js"></script>
