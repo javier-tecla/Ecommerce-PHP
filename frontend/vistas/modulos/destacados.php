@@ -113,7 +113,7 @@ VITRINA DE PRODUCTOS GRATIS
         VITRINA DE PRODUCTOS EN CUADRÍCULA
         ======================================-->
 
-        <ul class="gri0">
+        <ul class="grid0">
 
             <!-- Producto 1 -->
 
@@ -391,6 +391,286 @@ VITRINA DE PRODUCTOS GRATIS
 
         </ul>
 
+        <!--=====================================
+        VITRINA DE PRODUCTOS EN LISTA
+        ======================================-->
+
+        <ul class="list0" style="display:none">
+
+            <!-- PRODUCTO 1 -->
+
+            <li class="col-xs-12">
+
+                <!--=====================================-->
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+
+                    <figure>
+
+                        <a href="collar-de-diamantes-11" class="pixelProducto"><img src="http://localhost/ecommerce-php/backend/vistas/img/productos/accesorios/accesorio04.jpg" class="img-responsive"></a>
+
+                    </figure>
+
+                </div>
+
+                <!--=====================================-->
+
+                <div class="col-lg-10 col-md-7 col-sm-8 col-xs-12">
+
+                    <h1>
+
+                        <small>
+
+                            <a href="#" class="pixelProducto">Collar de diamantes</a>
+
+                        </small>
+
+                    </h1>
+
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi fugiat saepe sequi enim repudiandae eaque, aliquid asperiores laudantium, dolores optio itaque repellat velit numquam nobis alias rem id ratione.</p>
+
+                    <h2><small>GRATIS</small></h2>
+
+                    <div class="btn-group pull-left enlaces">
+
+                        <button type="button" class="btn btn-default btn-xs deseos" idProducto="470" data-toggle="tooltip" title="Agregar a mi lista de deseos">
+
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+
+                        </button>
+
+                        <a href="#" class="pixelProducto">
+
+                            <button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" title="Ver producto">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!--=====================================-->
+
+                <div class="col-xs-12">
+
+                    <hr>
+
+                </div>
+
+                <!--=====================================-->
+
+            </li>
+
+            <!-- PRODUCTO 2 -->
+
+            <li class="col-xs-12">
+
+                <!--=====================================-->
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+
+                    <figure>
+
+                        <a href="collar-de-diamantes-11" class="pixelProducto"><img src="http://localhost/ecommerce-php/backend/vistas/img/productos/accesorios/accesorio03.jpg" class="img-responsive"></a>
+
+                    </figure>
+
+                </div>
+
+                <!--=====================================-->
+
+                <div class="col-lg-10 col-md-7 col-sm-8 col-xs-12">
+
+                    <h1>
+
+                        <small>
+
+                            <a href="#" class="pixelProducto">Bolso Deportivo Gris</a>
+
+                        </small>
+
+                    </h1>
+
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi fugiat saepe sequi enim repudiandae eaque, aliquid asperiores laudantium, dolores optio itaque repellat velit numquam nobis alias rem id ratione.</p>
+
+                    <h2><small>GRATIS</small></h2>
+
+                    <div class="btn-group pull-left enlaces">
+
+                        <button type="button" class="btn btn-default btn-xs deseos" idProducto="470" data-toggle="tooltip" title="Agregar a mi lista de deseos">
+
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+
+                        </button>
+
+                        <a href="#" class="pixelProducto">
+
+                            <button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" title="Ver producto">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!--=====================================-->
+
+                <div class="col-xs-12">
+
+                    <hr>
+
+                </div>
+
+                <!--=====================================-->
+
+            </li>
+
+            <!-- PRODUCTO 3 -->
+
+            <li class="col-xs-12">
+
+                <!--=====================================-->
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+
+                    <figure>
+
+                        <a href="collar-de-diamantes-11" class="pixelProducto"><img src="http://localhost/ecommerce-php/backend/vistas/img/productos/accesorios/accesorio02.jpg" class="img-responsive"></a>
+
+                    </figure>
+
+                </div>
+
+                <!--=====================================-->
+
+                <div class="col-lg-10 col-md-7 col-sm-8 col-xs-12">
+
+                    <h1>
+
+                        <small>
+
+                            <a href="#" class="pixelProducto">Bolso Militar</a>
+
+                        </small>
+
+                    </h1>
+
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi fugiat saepe sequi enim repudiandae eaque, aliquid asperiores laudantium, dolores optio itaque repellat velit numquam nobis alias rem id ratione.</p>
+
+                    <h2><small>GRATIS</small></h2>
+
+                    <div class="btn-group pull-left enlaces">
+
+                        <button type="button" class="btn btn-default btn-xs deseos" idProducto="470" data-toggle="tooltip" title="Agregar a mi lista de deseos">
+
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+
+                        </button>
+
+                        <a href="#" class="pixelProducto">
+
+                            <button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" title="Ver producto">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!--=====================================-->
+
+                <div class="col-xs-12">
+
+                    <hr>
+
+                </div>
+
+                <!--=====================================-->
+
+            </li>
+
+            <!-- PRODUCTO 4 -->
+
+            <li class="col-xs-12">
+
+                <!--=====================================-->
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+
+                    <figure>
+
+                        <a href="collar-de-diamantes-11" class="pixelProducto"><img src="http://localhost/ecommerce-php/backend/vistas/img/productos/accesorios/accesorio01.jpg" class="img-responsive"></a>
+
+                    </figure>
+
+                </div>
+
+                <!--=====================================-->
+
+                <div class="col-lg-10 col-md-7 col-sm-8 col-xs-12">
+
+                    <h1>
+
+                        <small>
+
+                            <a href="#" class="pixelProducto">Pulsera de Diamantes</a>
+
+                        </small>
+
+                    </h1>
+
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi fugiat saepe sequi enim repudiandae eaque, aliquid asperiores laudantium, dolores optio itaque repellat velit numquam nobis alias rem id ratione.</p>
+
+                    <h2><small>GRATIS</small></h2>
+
+                    <div class="btn-group pull-left enlaces">
+
+                        <button type="button" class="btn btn-default btn-xs deseos" idProducto="470" data-toggle="tooltip" title="Agregar a mi lista de deseos">
+
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+
+                        </button>
+
+                        <a href="#" class="pixelProducto">
+
+                            <button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" title="Ver producto">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!--=====================================-->
+
+                <div class="col-xs-12">
+
+                    <hr>
+
+                </div>
+
+                <!--=====================================-->
+
+            </li>
+
+        </ul>
+
     </div>
 
 </div>
@@ -490,7 +770,7 @@ VITRINA DE PRODUCTOS MÁS VENDIDOS
         VITRINA DE PRODUCTOS EN CUADRÍCULA
         ======================================-->
 
-        <ul class="gri1">
+        <ul class="grid1" style="display: none;">
 
             <!-- Producto 1 -->
 
@@ -812,6 +1092,94 @@ VITRINA DE PRODUCTOS MÁS VENDIDOS
 
         </ul>
 
+        <!--=====================================
+        VITRINA DE PRODUCTOS EN LISTA
+        ======================================-->
+
+        <ul class="list1">
+
+            <!-- Producto 1 -->
+
+            <li class="col-xs-12">
+
+                <!--=======================================================-->
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+
+                    <figure>
+
+                        <a href="falda-de-flores-1" class="pixelProducto">
+
+                            <img src="http://localhost/ecommerce-php/backend/vistas/img/productos/ropa/ropa03.jpg" class="img-responsive">
+
+                        </a>
+
+                    </figure>
+
+                </div>
+
+                <!--=======================================================-->
+
+                <div class="col-lg-10 col-md-7 col-sm-8 col-xs-12">
+
+                    <h1>
+
+                        <small>
+
+                            <a href="#" class="pixelProducto">
+
+                                Falda de Flores
+
+                                <span class="label label-warning">Nuevo</span>
+
+                                <span class="label label-warning">40% off</span>
+
+                            </a>
+
+                        </small>
+
+                    </h1>
+
+                    <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus accusantium tempora commodi nesciunt adipisci labore iste ipsum aperiam laudantium explicabo provident vero, sint consequatur quidem vel nisi magni eveniet soluta.</p>
+
+                    <h2>
+
+                        <small>
+
+                            <strong class="oferta">USD $29</strong>
+
+                        </small>
+
+                        <small>$11</small>
+
+                    </h2>
+
+                    <div class="btn-group pull-left enlaces">
+
+                        <button type="button" class="btn btn-default btn-xs deseos" idProducto="470" data-toggle="tooltip" title="Agregar a mi lista de deseos">
+
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+
+                        </button>
+
+                        <a href="#" class="pixelProducto">
+
+                            <button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" title="Ver producto">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+        </ul>
+
     </div>
 
 </div>
@@ -911,7 +1279,7 @@ VITRINA DE PRODUCTOS MÁS VISTOS
         VITRINA DE PRODUCTOS EN CUADRÍCULA
         ======================================-->
 
-        <ul class="gri1">
+        <ul class="grid2" style="display: none;">
 
             <!-- Producto 1 -->
 
@@ -1257,6 +1625,97 @@ VITRINA DE PRODUCTOS MÁS VISTOS
 
             </li>
 
+        </ul>
+
+        <!--=====================================
+        VITRINA DE PRODUCTOS EN LISTA
+        ======================================-->
+
+        <ul class="list2">
+
+            <!-- Producto 1 -->
+
+            <li class="col-xs-12">
+
+                <!--=======================================================-->
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+
+                    <figure>
+
+                        <a href="falda-de-flores-1" class="pixelProducto">
+
+                            <img src="http://localhost/ecommerce-php/backend/vistas/img/productos/cursos/curso05.jpg" class="img-responsive">
+
+                        </a>
+
+                    </figure>
+
+                </div>
+
+                <!--=======================================================-->
+
+                <div class="col-lg-10 col-md-7 col-sm-8 col-xs-12">
+
+                    <h1>
+
+                        <small>
+
+                            <a href="#" class="pixelProducto">
+
+                                Curso de Bootstrap
+
+                                <span class="label label-warning">90% off</span>
+
+                            </a>
+
+                        </small>
+
+                    </h1>
+
+                    <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus accusantium tempora commodi nesciunt adipisci labore iste ipsum aperiam laudantium explicabo provident vero, sint consequatur quidem vel nisi magni eveniet soluta.</p>
+
+                    <h2>
+
+                        <small>
+
+                            <strong class="oferta">USD $100</strong>
+
+                        </small>
+
+                        <small>$10</small>
+
+                    </h2>
+
+                    <div class="btn-group pull-left enlaces">
+
+                        <button type="button" class="btn btn-default btn-xs deseos" idProducto="1" data-toggle="tooltip" title="Agregar a mi lista de deseos">
+
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+
+                        </button>
+
+                        <button type="button" class="btn btn-default btn-xs agregarCarrito" idProducto="404" imagen="http://localhost/ecommerce-php/backend/vistas/img/productos/cursos/curso05.jpg" titulo="Curso de Bootstrap" precio="10" tipo="virtual" peso="0" data-toggle="tooltip" title="Agregar al carrito de compras">
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        </button>
+
+                        <a href="#" class="pixelProducto">
+
+                            <button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" title="Ver producto">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </li>
 
         </ul>
 
