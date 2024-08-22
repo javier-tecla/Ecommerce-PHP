@@ -2,16 +2,16 @@
 VARIABLES
 ======================================*/
 
-var item = 0;
-var itemPaginacion = $("#paginacion li");
-var interrumpirCiclo = false;
-var imgProducto = $(".imgProducto");
-var titulos1 = $("#slide h1");
-var titulos2 = $("#slide h2");
-var titulos3 = $("#slide h3");
-var btnVerProducto = $("#slide button");
-var detenerIntervalo = false;
-var toogle = false;
+let item = 0;
+let itemPaginacion = $("#paginacion li");
+let interrumpirCiclo = false;
+let imgProducto = $(".imgProducto");
+let titulos1 = $("#slide h1");
+let titulos2 = $("#slide h2");
+let titulos3 = $("#slide h3");
+let btnVerProducto = $("#slide button");
+let detenerIntervalo = false;
+let toogle = false;
 
 $("#slide ul li").css({"width":100/$("#slide ul li").length + "%"})
 $("#slide ul").css({"width":$("#slide ul li").length*100 + "%"})
