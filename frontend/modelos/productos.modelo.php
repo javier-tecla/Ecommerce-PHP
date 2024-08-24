@@ -77,12 +77,12 @@ class ModeloProductos{
     MOSTRAR PRODUCTOS
     =======================================*/
 
-    public static function mdlMostrarProductos($tabla, $ordenar, $item, $valor) {
+    public static function mdlMostrarProductos($tabla, $ordenar, $item, $valor, $base, $tope) {
 
         try {
             if($item != null){
 
-                $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item ORDER BY $ordenar DESC LIMIT 4");
+                $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item ORDER BY $ordenar DESC LIMIT $base, $tope");
 
                 $stmt->bindParam(":".$item, $valor, PDO::PARAM_STR);
 

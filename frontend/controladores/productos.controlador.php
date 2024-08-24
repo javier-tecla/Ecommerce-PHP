@@ -42,11 +42,11 @@ class ControladorProductos {
 	MOSTRAR PRODUCTOS
 	======================================*/
 
-    public static function ctrMostrarProductos($ordenar, $item, $valor) {
+    public static function ctrMostrarProductos($ordenar, $item, $valor, $base, $tope) {
 
         $tabla = "productos";
 
-        $respuesta = ModeloProductos::mdlMostrarProductos($tabla, $ordenar, $item, $valor);
+        $respuesta = ModeloProductos::mdlMostrarProductos($tabla, $ordenar, $item, $valor, $base, $tope);
 
         // Verifica si la respuesta es falsa, si es así, devuelve un array vacío
         if ($respuesta === false) {

@@ -1,1 +1,1 @@
-<h1>INFO PRODUTO</h1>
+<h1>INFO PRODUCTO</h1>
