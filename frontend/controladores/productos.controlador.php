@@ -11,6 +11,11 @@ class ControladorProductos {
         $tabla = "categorias";
 
         $respuesta = ModeloProductos::mdlMostrarCategorias($tabla, $item, $valor);
+
+         // Verifica si la respuesta es falsa, si es así, devuelve un array vacío
+         if ($respuesta === false) {
+            return array();
+        }
         
         return $respuesta;
     }
@@ -24,6 +29,11 @@ class ControladorProductos {
         $tabla = "subcategorias";
 
         $respuesta = ModeloProductos::mdlMostrarSubCategorias($tabla, $item, $valor);
+
+         // Verifica si la respuesta es falsa, si es así, devuelve un array vacío
+         if ($respuesta === false) {
+            return array();
+        }
         
         return $respuesta;
     }
@@ -37,6 +47,29 @@ class ControladorProductos {
         $tabla = "productos";
 
         $respuesta = ModeloProductos::mdlMostrarProductos($tabla, $ordenar, $item, $valor);
+
+        // Verifica si la respuesta es falsa, si es así, devuelve un array vacío
+        if ($respuesta === false) {
+            return array();
+        }
+
+        return $respuesta;
+    }
+
+    /*=====================================
+	MOSTRAR INFOPRODUCTO
+	======================================*/
+
+    public static function ctrMostrarInfoProducto($item, $valor) {
+
+        $tabla = "productos";
+
+        $respuesta = ModeloProductos::mdlMostrarInfoProducto($tabla, $item, $valor);
+
+        // Verifica si la respuesta es falsa, si es así, devuelve un array vacío
+        if ($respuesta === false) {
+            return array();
+        }
 
         return $respuesta;
     }
