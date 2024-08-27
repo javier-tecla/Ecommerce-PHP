@@ -76,4 +76,19 @@ $(window).scroll(function () {
 		easingType: "easeOutQuint"
 });
 
+/*=============================================
+MIGAS DE PAN
+=============================================*/
+
+let pagActiva = $(".pagActiva").html();
+
+if(pagActiva != null) {
+
+  let regPagActiva = pagActiva.replace(/-/g, " ");
+
+  $(".pagActiva").html(regPagActiva);
+}
+
+
+
 
